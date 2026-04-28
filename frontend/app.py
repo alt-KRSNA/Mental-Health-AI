@@ -6,10 +6,10 @@ API_URL = "http://backend:8000/chat"
 
 st.set_page_config(page_title="Mental Health AI", layout="centered")
 
-st.title("🧠 Mental Health AI Assistant")
+st.title("Mental Health AI Assistant")
 st.caption("Talk freely. I'm here to listen.")
 
-# 🔥 STEP 1: Ask user name FIRST
+# STEP 1: Ask user name FIRST
 if "user_id" not in st.session_state:
     name = st.text_input("Enter your name to start:")
 
@@ -20,25 +20,25 @@ if "user_id" not in st.session_state:
     else:
         st.stop()
 
-# 🔥 Sidebar (optional but useful)
+# Sidebar
 with st.sidebar:
-    st.header("👤 User Info")
+    st.header("User Info")
     st.write(f"Logged in as: {st.session_state.user_id}")
 
-    if st.button("🔄 Clear Chat"):
+    if st.button("Clear Chat"):
         st.session_state.messages = []
         st.rerun()
 
-# 🔥 Initialize chat history
+# Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# 🔥 Display chat history
+# Display chat history
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
 
-# 🔥 Chat input
+# Chat input
 user_input = st.chat_input("How are you feeling today?")
 
 if user_input:
@@ -48,7 +48,7 @@ if user_input:
     with st.chat_message("user"):
         st.markdown(user_input)
 
-    # 🔥 Call backend
+    # Call backend
     try:
         response = requests.post(
             API_URL,
@@ -65,10 +65,10 @@ if user_input:
 
     except Exception as e:
         print("ERROR:", e)
-        reply = "⚠️ Backend not responding."
+        reply = "Backend not responding."
         emotion = "unknown"
 
-    # 🔥 Format AI response
+    # Format AI response
     ai_message = reply
 
     # Save AI response

@@ -11,23 +11,23 @@ def process_chat(user_id: str, message: str):
     message → emotion → memory → LLM → save → return
     """
 
-    # 🔹 Step 1: Detect Emotion
+    # Step 1: Detect Emotion
     emotion = detect_emotion(message)
 
-    # 🔹 Step 2: Fetch Memory (Fix order: oldest → newest)
+    # Step 2: Fetch Memory (Fix order: oldest → newest)
     past = list(reversed(get_recent_messages(user_id)))
 
-    # 🔹 Step 3: Generate Reply (Safe execution)
+    # Step 3: Generate Reply (Safe execution)
     try:
         reply = generate_reply(message, emotion, past)
     except Exception as e:
-        print("❌ LLM ERROR:", e)
+        print("LLM ERROR:", e)
         reply = "I'm here for you. Tell me more about what's on your mind."
 
-    # 🔹 Step 4: Save to DB
+    # Step 4: Save to DB
     save_message(user_id, message, emotion, reply)
 
-    # 🔹 Debug logs (very useful)
+    # Debug logs (very useful)
     print(f"[USER]: {message}")
     print(f"[EMOTION]: {emotion}")
     print(f"[AI]: {reply}")

@@ -1,24 +1,24 @@
 ## Mental Health AI 
 
-✨ Copy this:
-# 🧠 Mental Health AI Assistant
+Copy this:
+# Mental Health AI Assistant
 
 An AI-powered mental health assistant that interacts with users, detects emotions, and responds with empathetic, human-like conversations.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 💬 Chat-based interaction (like a friend)
-- 🧠 Emotion detection (text-based)
-- 🤖 AI-powered responses using Groq (LLaMA 3)
-- 🗂️ Conversation memory (MongoDB)
-- 🌐 Multi-device access (via network / deployment)
-- ⚡ Fast and responsive UI (Streamlit)
+- Chat-based interaction (like a friend)
+- Emotion detection (text-based)
+- AI-powered responses using Groq (LLaMA 3)
+- Conversation memory (MongoDB)
+- Multi-device access (via network / deployment)
+- Fast and responsive UI (Streamlit)
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 - **Frontend:** Streamlit  
 - **Backend:** FastAPI  
@@ -28,7 +28,7 @@ An AI-powered mental health assistant that interacts with users, detects emotion
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 
 Mental Health Assistant/
@@ -49,7 +49,7 @@ Mental Health Assistant/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone Repository
 
@@ -67,7 +67,7 @@ GROQ_API_KEY=your_api_key
 docker-compose up --build
 4. Open App
 http://localhost:8501
-📱 Access on Other Devices
+Access on Other Devices
 
 Find your IP:
 
@@ -76,43 +76,37 @@ ipconfig
 Then open:
 
 http://YOUR_IP:8501
-🧠 How It Works
+How It Works
 User sends message
 Emotion is detected
 Past messages are retrieved (memory)
 LLM generates response
 Conversation is stored in database
-🔒 Security Notes
+ Security Notes
 .env file is ignored (not uploaded)
 API keys are kept private
-🚀 Future Improvements
-🎤 Voice input/output
-📊 Emotion tracking dashboard
-🧠 Advanced NLP emotion model
-🌍 Full cloud deployment
-👨‍💻 Author
-
-Krishna
-AI & ML Enthusiast 🚀
-
-⭐ Show Your Support
-
-If you like this project, give it a ⭐ on GitHub!
+Future Improvements
+Voice input/output
+Emotion tracking dashboard
+Advanced NLP emotion model
+Full cloud deployment
+BY
+ Krishna
 
 
 ---
 
-# 🧠 🔥 AFTER THIS
+#  AFTER THIS
 
 ---
 
-## ✅ STEP 1: Save file
+## STEP 1: Save file
 
 `README.md`
 
 ---
 
-## ✅ STEP 2: Add & push
+## STEP 2: Add & push
 
 ```bash
 git add README.md

@@ -26,7 +26,7 @@ def chat_endpoint(request: ChatRequest):
         )
 
     except Exception as e:
-        print("❌ API ERROR:", e)
+        print("API ERROR:", e)
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
