@@ -1,6 +1,5 @@
 ## Mental Health AI 
 
-Copy this:
 # Mental Health AI Assistant
 
 An AI-powered mental health assistant that interacts with users, detects emotions, and responds with empathetic, human-like conversations.
