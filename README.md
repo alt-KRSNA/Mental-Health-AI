@@ -53,7 +53,7 @@ Mental Health Assistant/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mental-health-ai.git
+git clone https://github.com/alt-KRSNA/Mental-Health-AI.git
 cd mental-health-ai
 2. Create Environment File
 
