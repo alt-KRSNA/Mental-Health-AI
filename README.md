@@ -57,7 +57,7 @@ git clone https://github.com/YOUR_USERNAME/mental-health-ai.git
 cd mental-health-ai
 2. Create Environment File
 
-📍 backend/.env
+backend/.env
 
 MONGO_URI=your_mongodb_uri
 DB_NAME=mental_health_ai
